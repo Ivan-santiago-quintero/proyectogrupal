@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modificar Estudiante</title>
-    <link rel="stylesheet" type="text/css" href="../../bootstrap-4.6.0-dist/bootstrap-4.6.0-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="../../css/estilos.css">
+    <title>Estudiantes</title>
+    <link href="../../bootstrap-4.6.0-dist/bootstrap-4.6.0-dist/css/bootstrap.min.css"  rel="stylesheet" type="text/css"  >
+    <link href="../../css/estilos.css" rel="stylesheet" type="text/css"  >
+ 
 </head>
-   <!--Creado por Hary-->
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="../../index.html"><img src="../../img/1.jpg" weigth="80 "height="70"> </a>
@@ -25,8 +25,8 @@
              </a>
              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="../estudiantes/index.html">Ver estudiantes</a>
-                <a class="dropdown-item" href="../notas/index.html">Materias</a>
-                <a class="dropdown-item" href="">Archivos</a>
+                <a class="dropdown-item" href="../materias/index.html">Materias</a>
+                <a class="dropdown-item" href="../notas/index.html">Archivos</a>
              </div>
             </li>
             
@@ -38,8 +38,8 @@
              Usuario
               </a>
              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="">Roles</a>
-              <a class="dropdown-item" href="">Usuario</a>
+              <a class="dropdown-item" href="../roles/index.html">Roles</a>
+              <a class="dropdown-item" href="../usuario/index.html">Usuario</a>
               <div class="dropdown-divider"></div>
              <a class="dropdown-item" href="../../index.html">Cerrar sesion</a>
              </div>
@@ -47,49 +47,98 @@
          </ul>
        </div>
     </nav>
+
     <div class="container">
-        <div class="row justify-content-center">
+        <div id="listado" class="row justify-content-center">
             <div class="col-sm-9 col-xl-9">
                 <div class="card">
                     <div class="card-header">
-                        Modificar Estudiante
-                        <button type="button" class="btn btn-success Materias">Regresar</button>
+                        
+                        Listado de Estudiantes 
+                        <button type="button" class="btn btn-primary float-right" >Crear Estudiante</button>
                     </div>
                     <div class="card-body">
                         <table class="table">
+                            <thead>
+                              <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Identificacion</th>
+                                <th scope="col">Nombre</th>
+                                <th scope="col">Correo electrónico  </th>
+                                <th scope="col">Telefono </th>
+                                <th scope="col">Herramientas</th>
+                              </tr>
+                            </thead>
                             <tbody>
-                                <form>
-                                    <div class="form-group">
-                                        <label for="exampleInputEmail1">Tarjeta de Identidad</label>
-                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="exampleInputPassword1">Apellidos</label>
-                                        <input type="password" class="form-control" id="exampleInputPassword1">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="exampleInputEmail1">Nombres</label>
-                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="exampleInputEmail1">Celular</label>
-                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="321 123 4567">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="exampleInputEmail1">Correo electrónico</label>
-                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="ejemplo@mail.com">
-                                    </div>
-                                    <button type="submit" class="btn btn-primary">Modificar</button>
-                                </form>
+                              <tr>
+                                <th scope="row">1</th>
+                                <td>1025158123</td>
+                                <td>Camilo Andres Ramirez Cuevas</td>
+                                <td>camilo.ramirez.cuevas@gmail.com</td>
+                                <td> 3012586936</td>
+
+                                <td>
+                                     <a href="./materias.html" class="btn btn-success " tabindex="-1" role="button" aria-disabled="true">notas</a>  <br>
+                                     <a href="./editar.html" class="btn btn-primary" tabindex="-1" role="button" aria-disabled="true">Modificar</a>   
+                                     <button type="button" class="btn btn-danger">Eliminar</button>
+                                    
+                                </td>
+                              </tr>
+                              <tr>
+                                <th scope="row">2</th>
+                                <td>1032589258</td>
+                                <td>Sergio David Cortes Romero</td>
+                                <td>sergio.cortes.romero@gmail.com</td>
+                                <td>3215896936</td>
+
+                                <td>
+                                     <a href="./materias.html" class="btn btn-success " tabindex="-1" role="button" aria-disabled="true">notas</a>     <br>
+                                     <a href="./editar.html" class="btn btn-primary" tabindex="-1" role="button" aria-disabled="true">Modificar</a>     <br> 
+                                     <button type="button" class="btn btn-danger">eliminar</button>
+                                </td>
+                              </tr>
+                              <tr>
+                                <th scope="row">3</th>
+                                <td>1032266588</td>
+                                <td>Jessika Camila Ramirez Sanchez</td>
+                                <td>jess.camila.ramirez@gmail.com</td>
+                                <td>3216547898</td>
+
+                                <td>
+                                    <a href="./materias.html" class="btn btn-success " tabindex="-1" role="button" aria-disabled="true">notas</a>     <br>
+                                    <a href="./editar.html" class="btn btn-primary" tabindex="-1" role="button" aria-disabled="true">Modificar</a>     <br> 
+                                    <button type="button" class="btn btn-danger">eliminar</button>
+                              </tr>
+                              <tr>
+                                <th scope="row">4</th>
+                                <td>1035896569</td>
+                                <td>Laura Vanessa Ardila </td>
+                                <td>laura.ardila@gmail.com</td>
+                                <td>3102589636</td>
+                                
+                                <td>
+                                    <a href="./materias.html" class="btn btn-success " tabindex="-1" role="button" aria-disabled="true">notas</a>    <br> 
+                                    <a href="./editar.html" class="btn btn-primary" tabindex="-1" role="button" aria-disabled="true">Modificar</a>     <br> 
+                                    <button type="button" class="btn btn-danger">eliminar</button>
+                              </tr>
                             </tbody>
-                        </table>
+                          </table>
+                        
+                        
+
                     </div>
+
+
+
                 </div>
             </div>
         </div>
+
     </div>
 
-    <script src ="../../js/jquery-3.6.min.js"></script>
-    <script src= "../../bootstrap-4.6.0-dist/bootstrap-4.6.0-dist/js/bootstrap.bundle.min.js"></script>     
+
+<script src="../../js/jquery-3.6.min.js"></script>
+    <script src="../../bootstrap-4.6.0-dist/bootstrap-4.6.0-dist/js/bootstrap.bundle.min.js"></script>
+    
 </body>
 </html>
