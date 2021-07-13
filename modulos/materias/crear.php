@@ -1,3 +1,4 @@
+<!-- creado por ivan quintero-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,7 +12,7 @@
 <body>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="../../index.html"><img src="../../img/logo.jpg" weigth="80 "height="70"> </a>
+      <a class="navbar-brand" href="../../index.php"><img src="../../img/logo.jpg" weigth="80 "height="70"> </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
            <span class="navbar-toggler-icon">   
            </span>
@@ -24,9 +25,9 @@
               Estudiantes
            </a>
            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="../estudiantes/index.html">Ver estudiantes</a>
-              <a class="dropdown-item" href="../materias/index.html">Materias</a>
-              <a class="dropdown-item" href="../archivos/archivosprofesor.html">Archivos</a>
+              <a class="dropdown-item" href="../estudiantes/index.php">Ver estudiantes</a>
+              <a class="dropdown-item" href="../materias/index.php">Materias</a>
+              <a class="dropdown-item" href="../archivos/archivosprofesor.php">Archivos</a>
            </div>
           </li>
           
@@ -38,23 +39,24 @@
            Usuario
             </a>
            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="../roles/index.html">Roles</a>
-            <a class="dropdown-item" href="../usuario/index.html">Usuario</a>
+            <a class="dropdown-item" href="../roles/index.php">Roles</a>
+            <a class="dropdown-item" href="../usuario/index.php">Usuario</a>
             <div class="dropdown-divider"></div>
-           <a class="dropdown-item" href="../../index.html">Cerrar sesion</a>
+           <a class="dropdown-item" href="../../index.php">Cerrar sesion</a>
            </div>
           </li>
        </ul>
      </div>
   </nav>
      <div class="container"   >
+     <form name="crearmateria" method="POST" action="../../procesos/crear_materia.php">
         <div class="row justify-content-center">
             <div class="col-sm-9 col-xl-9">
                 <div class="card">
                     <div class="card-header">
                         
-                        modificar materia
-                        <td><a href="./index.html" class="btn btn-primary" tabindex="-1" role="button" aria-disabled="true">Regresar</a>
+                        Creacion materia
+                        <td><a href="./index.php" class="btn btn-primary" tabindex="-1" role="button" aria-disabled="true">Regresar</a>
                     </div>
                     <div class="card-body">
                         <table class="table">
@@ -62,9 +64,9 @@
                                 <thbody>
                                     <tr>
                                        <label for="inputPassword5" class="form-label">Nombre</label>
-                                        <input type="text" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
+                                        <input type="text" name="crear_materia"  id="crear_materia" class="form-control" aria-describedby="passwordHelpBlock">
                                     </tr>
-                                    <td><button class="btn btn-primary btn-lg"  >modificar</button> </td>
+                                    <td><button class="btn btn-primary btn-lg" type= "submit"  >crear</button> </td>
 
 
      

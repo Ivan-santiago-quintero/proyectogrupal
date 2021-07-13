@@ -11,7 +11,7 @@
 <body>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="../../index.html"><img src="../../img/logo.jpg" weigth="80 "height="70"> </a>
+      <a class="navbar-brand" href="../../index.php"><img src="../../img/logo.jpg" weigth="80 "height="70"> </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
            <span class="navbar-toggler-icon">   
            </span>
@@ -24,8 +24,8 @@
               Estudiantes
            </a>
            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="../estudiantes/index.html">Ver estudiantes</a>
-              <a class="dropdown-item" href="../materias/index.html">Materias</a>
+              <a class="dropdown-item" href="../estudiantes/index.php">Ver estudiantes</a>
+              <a class="dropdown-item" href="../materias/index.php">Materias</a>
               <a class="dropdown-item" href="../archivos/archivoprofesor">Archivos</a>
            </div>
           </li>
@@ -38,10 +38,10 @@
            Usuario
             </a>
            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="../roles/index.html">Roles</a>
-            <a class="dropdown-item" href="../usuario/index.html">Usuario</a>
+            <a class="dropdown-item" href="../roles/index.php">Roles</a>
+            <a class="dropdown-item" href="../usuario/index.php">Usuario</a>
             <div class="dropdown-divider"></div>
-           <a class="dropdown-item" href="../../index.html">Cerrar sesion</a>
+           <a class="dropdown-item" href="../../index.php">Cerrar sesion</a>
            </div>
           </li>
        </ul>
@@ -53,7 +53,7 @@
               <div class="card carda">
                 <div class="card-header d-flex justify-content-between align-items-center bg-light">
                   Listado de Roles
-                  <a href="crear.html" class="btn btn-primary" tabindex="-1" role="button" aria-disabled="true"> Crear Roles</a>
+                  <a href="crear.php" class="btn btn-primary" tabindex="-1" role="button" aria-disabled="true"> Crear Roles</a>
               </div>
                     <div class="card-body">
                         <table class="table">
@@ -76,7 +76,7 @@
                             </td>                          
                             
                             <td>
-                                <a href="editar.html" class="btn btn-primary" tabindex="-1" role="button" aria-disabled="true">Modificar</a>
+                                <a href="editar.php" class="btn btn-primary" tabindex="-1" role="button" aria-disabled="true">Modificar</a>
 
                                 <button type="button" class="btn btn-danger">Eliminar</button>
                             </td>
@@ -90,7 +90,7 @@
                                   
                                   
                                 <td>
-                                    <a href="editar.html" class="btn btn-primary" tabindex="-1" role="button" aria-disabled="true">Modificar</a>
+                                    <a href="editar.php" class="btn btn-primary" tabindex="-1" role="button" aria-disabled="true">Modificar</a>
                                     <button type="button" class="btn btn-danger">Eliminar</button>
                                 </td>
                                 </tr>
@@ -101,7 +101,7 @@
 
                               </td>
                               <td>
-                                <a href="editar.html" class="btn btn-primary" tabindex="-1" role="button" aria-disabled="true">Modificar</a>
+                                <a href="editar.php" class="btn btn-primary" tabindex="-1" role="button" aria-disabled="true">Modificar</a>
                                 <button type="button" class="btn btn-danger">Eliminar</button>
                               </td>
                             </tr>

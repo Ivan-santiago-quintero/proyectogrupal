@@ -10,6 +10,7 @@
 </head>
 <body>
     <div class="container m-3">
+    <form">
         <div class="row justify-content-center">
             <div class="col-sm-8 col-xl-8">
                 <div class="card">
@@ -25,22 +26,33 @@
                         <div class="tab-content" id="nav-tabContent">
                             <!--Formulario Login-->
                             <div class="tab-pane fade show active" id="list-login" role="tabpanel" aria-labelledby="list-login-list">
-                                <form>
+                                <form method="POST" action="login.php">
                                     <div class="form-group">
-                                        <label for="email">Correo electrónico</label>
-                                        <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" required>
+                                        <label for="correo_user">Correo electrónico</label>
+                                        <input type="email" class="form-control" id="correo_user" name="correo_user" aria-describedby="emailHelp" required>
                                         <small id="emailHelp" class="form-text text-muted">Nunca compartiremos su correo electrónico con nadie más.</small>
                                     </div>
                                     <div class="form-group">
-                                        <label for="password">Contraseña</label>
-                                        <input type="password" class="form-control" id="password" name="password" required>
+                                        <label for="pass_user">Contraseña</label>
+                                        <input type="password" class="form-control" id="pass_user" name="pass_user" required>
                                     </div>
+                                    <span> 
+                                        <?php
+                                        //manera 1 
+                                        if (isset($_GET['e'])) {
+                                            echo $_GET['e'];
+                                        }
+                                        ?>
+                                   </span>
                                     <button type="submit" class="btn btn-primary">Ingresar</button> 
                                 </form>
                             </div>
                             <!--Formulario Register-->
+
+
+
                             <div class="tab-pane fade" id="list-register" role="tabpanel" aria-labelledby="list-register-list">
-                                <form name="forregistro">
+                                <form name="forregistro" method="POST" action="procesos/form_registro_user.php">
 
                                     <div class="form-group">
                                         <label for="identificacion">Identificaci&oacuten</label>
@@ -69,10 +81,9 @@
 
                                     <div class="form-group">
                                         <label for="confirpassword">Confirmar Contraseña</label>
-                                        <input type="password" class="form-control" id="confirpassword" name="confirpassword">
+                                        <input type="password" class="form-control" id="confirpassword" name="confirpassword" onkeypress="validar_pass()">
                                     </div>
-                                    
-                                    <input type="button" class="btn btn-primary" value='Registrar'>
+                                    <button type="submit" class="btn btn-primary">Registrarse</button>
                                 </form>
                             </div>
                         </div>
@@ -84,5 +95,14 @@
 
     <script src="./js/jquery-3.6.min.js"></script>
     <script src="./bootstrap-4.6.0-dist/bootstrap-4.6.0-dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+    function validar_pass(){
+        let text_input = document.getElementById('passwregis').value
+        let text_confirm = document.getElementById('confirpassword').value
+        if(text_input == text_confirm){
+            alert("esta bien")
+        }
+    }
+    </script>
 </body>
 </html>

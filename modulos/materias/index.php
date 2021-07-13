@@ -12,7 +12,7 @@
 <body>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="../../index.html"><img src="../../img/logo.jpg" weigth="80 "height="70"> </a>
+      <a class="navbar-brand" href="../../index.php"><img src="../../img/logo.jpg" weigth="80 "height="70"> </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
            <span class="navbar-toggler-icon">   
            </span>
@@ -25,9 +25,9 @@
               Estudiantes
            </a>
            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="../estudiantes/index.html">Ver estudiantes</a>
-              <a class="dropdown-item" href="../materias/index.html">Materias</a>
-              <a class="dropdown-item" href="../archivos/archivosprofesor.html">Archivos</a>
+              <a class="dropdown-item" href="../estudiantes/index.php">Ver estudiantes</a>
+              <a class="dropdown-item" href="../materias/index.php">Materias</a>
+              <a class="dropdown-item" href="../archivos/archivosprofesor.php">Archivos</a>
            </div>
           </li>
           
@@ -39,10 +39,10 @@
            Usuario
             </a>
            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="../roles/index.html">Roles</a>
-            <a class="dropdown-item" href="../usuario/index.html">Usuario</a>
+            <a class="dropdown-item" href="../roles/index.php">Roles</a>
+            <a class="dropdown-item" href="../usuario/index.php">Usuario</a>
             <div class="dropdown-divider"></div>
-           <a class="dropdown-item" href="../../index.html">Cerrar sesion</a>
+           <a class="dropdown-item" href="../../index.php">Cerrar sesion</a>
            </div>
           </li>
        </ul>
@@ -54,7 +54,7 @@
         <div class="card">
           <div class="card-header">
             Listado de Materias
-            <td><a href="./crear.html" class="btn btn-success Materias" tabindex="-1" role="button" aria-disabled="true">Crear materias</a> 
+            <td><a href="./crear.php" class="btn btn-success Materias" tabindex="-1" role="button" aria-disabled="true">Crear materias</a> 
           </div>
           <div class="card-body">
             <table class="table">
@@ -69,28 +69,28 @@
                 <tr>
                   <th scope="row">1</th>
                   <td>Orquesta</td>
-                  <td><a href="./editar.html" class="btn btn-primary" tabindex="-1" role="button" aria-disabled="true">Modificar</a>
+                  <td><a href="./editar.php" class="btn btn-primary" tabindex="-1" role="button" aria-disabled="true">Modificar</a>
                     <input type="button" value="Eliminar" class="btn btn-danger"></button>
                   </td>
                 </tr>
                 <tr>
                   <th scope="row">2</th>
                   <td>Quimica</td>
-                  <td><a href="./editar.html" class="btn btn-primary" tabindex="-1" role="button" aria-disabled="true">Modificar</a>
+                  <td><a href="./editar.php" class="btn btn-primary" tabindex="-1" role="button" aria-disabled="true">Modificar</a>
                     <input type="button" value="Eliminar" class="btn btn-danger"></button>
                   </td>
                 </tr>
                 <tr>
                   <th scope="row">3</th>
                   <td>Sociales</td>
-                  <td><a href="./editar.html" class="btn btn-primary" tabindex="-1" role="button" aria-disabled="true">Modificar</a>
+                  <td><a href="./editar.php" class="btn btn-primary" tabindex="-1" role="button" aria-disabled="true">Modificar</a>
                     <input type="button" value="Eliminar" class="btn btn-danger"></button>
                   </td>
                 </tr>
                 <tr>
                   <th scope="row">4</th>
                   <td>Educación Física</td>
-                  <td><a href="./editar.html" class="btn btn-primary" tabindex="-1" role="button" aria-disabled="true">Modificar</a>
+                  <td><a href="./editar.php" class="btn btn-primary" tabindex="-1" role="button" aria-disabled="true">Modificar</a>
                     <input type="button" value="Eliminar" class="btn btn-danger">
                   </td>
                 </tr>
